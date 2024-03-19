@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pegawai</title>
+</head>
+
+<body>
+    <h1>Data Pegawai</h1>
+
+    <form id="form-pegawai">
+        <label for="nama">Nama Pegawai:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+        <label for="jabatan">Jabatan:</label>
+        <select id="jabatan" name="jabatan" required>
+            <option value="Manager">Manager</option>
+            <option value="Asisten Manager">Asisten Manager</option>
+            <option value="Staff">Staff</option>
+        </select><br><br>
+        <label for="gaji">Gaji Pokok:</label>
+        <input type="number" id="gaji" name="gaji" required><br><br>
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="menikah">Menikah</option>
+            <option value="belum">Belum Menikah</option>
+        </select><br><br>
+        <button type="button" onclick="cetak()">Cetak</button>
+    </form>
+
+    <hr>
+
+    <div id="tabel-pegawai"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
